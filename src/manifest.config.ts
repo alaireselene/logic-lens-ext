@@ -12,8 +12,8 @@ const [major, minor, patch] = version
 
 export default defineManifest(async () => ({
     manifest_version: 3,
-    name: "Chrome Extension Svelte Typescript Boilerplate",
-    description: "Boilerplate for Chrome Extension Svelte Typescript project",
+    name: "LogicLens",
+    description: "Analyze content for credibility with Logic Lens",
     version: `${major}.${minor}.${patch}`,
     version_name: version,
     icons: {
@@ -22,12 +22,6 @@ export default defineManifest(async () => ({
         "48": "src/assets/icons/icon-48.png",
         "128": "src/assets/icons/icon-128.png",
     },
-    content_scripts: [
-        {
-            matches: ["https://*/*"],
-            js: ["src/content/index.ts"],
-        },
-    ],
     background: {
         service_worker: "src/background/index.ts",
     },
