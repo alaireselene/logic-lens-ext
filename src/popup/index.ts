@@ -3,6 +3,7 @@ import Options from "../components/Options.svelte";
 
 // Action popup
 // https://developer.chrome.com/docs/extensions/reference/action/
+import "../styles.css";
 
 function render() {
     const target = document.getElementById("app");
